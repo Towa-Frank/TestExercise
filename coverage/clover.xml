@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1702035050667" clover="3.2.0">
-  <project timestamp="1702035050667" name="All files">
-    <metrics statements="5" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1" elements="11" coveredelements="3" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+<coverage generated="1702037616119" clover="3.2.0">
+  <project timestamp="1702037616119" name="All files">
+    <metrics statements="12" coveredstatements="6" conditionals="7" coveredconditionals="4" methods="3" coveredmethods="2" elements="22" coveredelements="12" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
     <file name="index.js" path="/home/frank/quality-env-tests/src/index.js">
-      <metrics statements="5" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="12" coveredstatements="6" conditionals="7" coveredconditionals="4" methods="3" coveredmethods="2"/>
       <line num="1" count="4" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="4" count="0" type="cond" truecount="0" falsecount="4"/>
-      <line num="5" count="0" type="stmt"/>
-      <line num="8" count="0" type="stmt"/>
+      <line num="4" count="3" type="cond" truecount="4" falsecount="0"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="11" count="1" type="cond" truecount="0" falsecount="1"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>
