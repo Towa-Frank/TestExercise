@@ -15,9 +15,11 @@ export const mysizeAlphaT = (str = '') => {
     return count;
   }
 
-  while (!str[count]) {
+  while (!!str[count]) {
     count++;
+
   }
 
   return count;
 }
+

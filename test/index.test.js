@@ -1,4 +1,4 @@
-import { myAalphaNumberT, sum } from '../src/index';
+import { myAalphaNumberT, sum, mysizeAlphaT } from '../src/index';
 
 describe('myAalphaNumberT', () => {
   it('Should return hello when hello is in string', () => {
@@ -30,6 +30,15 @@ describe('sum', () => {
 
 });
 
+describe('mysizeAlphaT', () => {
+  it('Should return the string Hello', () => {
+    expect(mysizeAlphaT()).toBe('hello');
+  });
+  it('Should return all the characrters', () => {
+    expect(mysizeAlphaT('bonjour')).toBe(7);
+  });
 
+
+});
 
 
