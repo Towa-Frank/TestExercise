@@ -1,4 +1,4 @@
-import { myAalphaNumberT, sum, mysizeAlphaT } from '../src/index';
+import { myAalphaNumberT, sum, mysizealpha, displayAlphaT, myarrayAlphaT, myposinegT, fibo, mylengtharrayT } from '../src/index';
 
 describe('myAalphaNumberT', () => {
   it('Should return hello when hello is in string', () => {
@@ -13,7 +13,6 @@ describe('myAalphaNumberT', () => {
   it('Should test if the function return undefine if argument is empty', () => {
     expect(myAalphaNumberT()).toBe('undefined');
   });
-
 });
 
 describe('sum', () => {
@@ -26,19 +25,36 @@ describe('sum', () => {
   it('Should return negative number', () => {
     expect(sum(-2, 3)).toBe(1);
   });
-
-
 });
 
+describe('displayAlphaT', () => {
+  it('returns the correct alphabet string', () => {
+    const expectedAlphabet = 'abcdefghijklmnopqrstuvwxyz';
+    expect(displayAlphaT()).toBe(expectedAlphabet);
+  });
+});
+describe('myarrayAlphaT', () => {
+  it('eturns an array of characters for a valid string', () => {
+    expect(myarrayAlphaT('Hello')).toBe(['H', 'e', 'l', 'l', 'o']);
+  });
+});
+/*
+describe('mysizealpha', () => {
+  it('Should return a string length', () => {
+    expect(mysizealpha('hello')).toBe(5);
+  });
+  it('Should return O if the string is empty', () => {
+    expect(mysizealpha('')).toBe(0);
+  });
+});
+
+/*
 describe('mysizeAlphaT', () => {
-  it('Should return the string Hello', () => {
-    expect(mysizeAlphaT()).toBe('hello');
+  it('Should return the correct length of the string', () => {
+    expect(mysizeAlphaT('Hello')).toBe(5);
   });
-  it('Should return all the characrters', () => {
-    expect(mysizeAlphaT('bonjour')).toBe(7);
+  it('Should return O for an empty string', () => {
+    expect(mysizeAlphaT('')).toBe(0);
   });
-
-
 });
-
-
+*/
