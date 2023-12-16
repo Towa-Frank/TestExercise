@@ -31,7 +31,7 @@ export const myarrayAlphaT = (str) => {
 
   return result;
 };
-/*
+
 export const myposinegT = (nbr) => {
   if (nbr <= 0) {
     return 'NEGATIVE';

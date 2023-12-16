@@ -34,10 +34,34 @@ describe('displayAlphaT', () => {
   });
 });
 describe('myarrayAlphaT', () => {
-  it('eturns an array of characters for a valid string', () => {
-    expect(myarrayAlphaT('Hello')).toBe(['H', 'e', 'l', 'l', 'o']);
+  it('should return an empty array for an empty string', () => {
+    expect(myarrayAlphaT('')).toEqual([]);
+  });
+  it('should return an array of characters for a non-empty string', () => {
+    expect(myarrayAlphaT('abc')).toEqual(['a', 'b', 'c']);
+  });
+  it('should handle special characters', () => {
+    expect(myarrayAlphaT('!@#$')).toEqual(['!', '@', '#', '$']);
+  });
+  it('should handle whitespace characters', () => {
+    expect(myarrayAlphaT('  a b c  ')).toEqual([' ', ' ', 'a', ' ', 'b', ' ', 'c', ' ', ' ']);
   });
 });
+describe('myposinegT function', () => {
+  test('returns "NEGATIVE" for negative numbers', () => {
+    const result = myposinegT(-5);
+    expect(result).toBe('NEGATIVE');
+  });
+  test('returns "NEGATIVE" for zero', () => {
+    const result = myposinegT(0);
+    expect(result).toBe('NEGATIVE');
+  });
+  test('returns "POSITIF" for positive numbers', () => {
+    const result = myposinegT(7);
+    expect(result).toBe('POSITIF');
+  });
+});
+
 /*
 describe('mysizealpha', () => {
   it('Should return a string length', () => {
