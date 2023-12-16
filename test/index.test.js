@@ -61,7 +61,23 @@ describe('myposinegT function', () => {
     expect(result).toBe('POSITIF');
   });
 });
+describe('fibo function', () => {
+  it('should return 0 for n <= 0', () => {
+    expect(fibo(0)).toBe(0);
+    expect(fibo(-1)).toBe(0);
+  });
 
+  it('should return 1 for n = 1 or n = 2', () => {
+    expect(fibo(1)).toBe(1);
+    expect(fibo(2)).toBe(1);
+  });
+
+  it('should return the correct Fibonacci sequence values for n > 2', () => {
+    expect(fibo(3)).toBe(2);
+    expect(fibo(4)).toBe(3);
+    expect(fibo(5)).toBe(5);
+  });
+});
 /*
 describe('mysizealpha', () => {
   it('Should return a string length', () => {

@@ -39,7 +39,7 @@ export const myposinegT = (nbr) => {
 
   return 'POSITIF';
 };
-/*
+
 export const fibo = (n) => {
   if (n <= 0) {
     return 0;
@@ -51,7 +51,7 @@ export const fibo = (n) => {
 
   return fibo(n - 1) + fibo(n - 2);
 };
-
+/*
 export const Mydisplayalphreverse_t = () => {
   const alpha = my_display_alpha_t();
   let reverseAlpha = '';
