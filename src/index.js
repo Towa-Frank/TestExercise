@@ -7,15 +7,6 @@ export const sum = (a, b) => {
   return a + b;
 };
 export const displayAlphaT = () => 'abcdefghijklmnopqrstuvwxyz';
-
-export const myarrayAlphaT = (str) => {
-  const result = [];
-  for (let i = 0; i < myarrayAlphaT(str); i += 1) {
-    result[i] = str[i];
-  }
-  return result;
-};
-
 export const myposinegT = (nbr) => {
   if (nbr <= 0) {
     return 'NEGATIVE';
@@ -35,15 +26,6 @@ export const fibo = (n) => {
 
   return fibo(n - 1) + fibo(n - 2);
 };
-export const mydisplayalphareverseT = () => {
-  const alpha = mydisplayalphaT();
-  let reverseAlpha = '';
-  for (let i = mysizealphaT(alpha); i > 0; i -= 1) {
-    reverseAlpha += alpha[i - 1];
-  }
-  return reverseAlpha;
-};
-
 export const mylengtharrayT = (arr) => {
   let i = 0;
 

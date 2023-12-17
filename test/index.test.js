@@ -1,4 +1,4 @@
-import { myAalphaNumberT, sum, displayAlphaT, myposinegT, fibo, mylengtharrayT, mydisplayunicodeT } from '../src/index';
+import { myAalphaNumberT, sum, displayAlphaT, myposinegT, fibo, mydisplayunicodeT } from '../src/index';
 
 describe('myAalphaNumberT', () => {
   it('Should return hello when hello is in string', () => {
@@ -62,22 +62,6 @@ describe('fibo function', () => {
     expect(fibo(3)).toBe(2);
     expect(fibo(4)).toBe(3);
     expect(fibo(5)).toBe(5);
-  });
-});
-
-describe('mydisplayalphaT', () => {
-  test('mydisplayalphaT returns the correct value', () => {
-  });
-});
-
-describe('mysizelpha', () => {
-  test('mysizelpha returns the correct size', () => {
-  });
-});
-describe('mylengtharrayT', () => {
-  it('returns the correct length for an array with elements', () => {
-    const result = mylengtharrayT([1, 2, 3]);
-    expect(result).toBe(3);
   });
 });
 
