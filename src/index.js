@@ -1,6 +1,4 @@
-/* eslint-disable no-plusplus */
 export const myAalphaNumberT = (nbr) => `${nbr}`;
-
 export const sum = (a, b) => {
   if (typeof a !== 'number' || typeof b !== 'number') {
     return 0;
@@ -8,27 +6,13 @@ export const sum = (a, b) => {
 
   return a + b;
 };
-/*
-export const mysizealpha = (str = '') => {
-  let count = 0;
-  if (typeof str !== 'string') {
-    return count;
-  }
-  while (!str[count]) {
-    count++;
-  }
-  return count;
-};
-*/
 export const displayAlphaT = () => 'abcdefghijklmnopqrstuvwxyz';
 
 export const myarrayAlphaT = (str) => {
   const result = [];
-
   for (let i = 0; i < myarrayAlphaT(str); i += 1) {
     result[i] = str[i];
   }
-
   return result;
 };
 
@@ -51,17 +35,14 @@ export const fibo = (n) => {
 
   return fibo(n - 1) + fibo(n - 2);
 };
-/*
-export const Mydisplayalphreverse_t = () => {
-  const alpha = my_display_alpha_t();
+export const mydisplayalphareverseT = () => {
+  const alpha = mydisplayalphaT();
   let reverseAlpha = '';
-
-  for (let i = my_size_alpha_t(alpha); i > 0; i -= 1) {
+  for (let i = mysizealphaT(alpha); i > 0; i -= 1) {
     reverseAlpha += alpha[i - 1];
   }
-
   return reverseAlpha;
-}
+};
 
 export const mylengtharrayT = (arr) => {
   let i = 0;
@@ -71,7 +52,8 @@ export const mylengtharrayT = (arr) => {
   }
 
   return i;
-}
+};
+
 export const mydisplayunicodeT = (arr) => {
   const results = [];
 
@@ -94,4 +76,3 @@ export const mydisplayunicodeT = (arr) => {
 
   return results.join('');
 };
-*/
