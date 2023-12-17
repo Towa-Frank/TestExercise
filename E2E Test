@@ -1,0 +1,23 @@
+module.exports = {
+  'Scenario 1: Authentification valide': function (browser) {
+    browser
+      .url('url_de_votre_application')
+      .setValue('#loginInput', 'votre_login')
+      .setValue('#passwordInput', 'votre_mot_de_passe')
+      .click('#connexionButton')
+      .waitForElementVisible('#dashboardPage', 5000)
+      .assert.containsText('#userProfile', 'TestE2E')
+      .end();
+  },
+
+  'Scenario 2: Authentification non valide': function (browser) {
+    browser
+      .url('url_de_votre_application')
+      .setValue('#loginInput', 'login_invalide')
+      .setValue('#passwordInput', 'mot_de_passe_invalide')
+      .click('#connexionButton')
+      .waitForElementVisible('#errorMessage', 5000)
+      .assert.containsText('#errorMessage', 'Ce compte n\'existe pas')
+      .end();
+  },
+};
